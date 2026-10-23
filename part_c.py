@@ -53,8 +53,53 @@ print("All relatives:", ram_family.union(sita_family))
 print("Only in ram_family:", (ram_family - sita_family))
 
 # C5
+student = {"name": "Aarav", "age": 17, "city": "Pokhara"}
+
+student["city"] = "Kathmandu"
+student["course"] = "Python"
+del student["age"]
+for key in student.keys():
+    print(key)
+
+for value in student.values():
+    print(value)
+
+for key, value in student.items():
+    print(key, value)
 
 
+# C6
+fruits = {
+    "Apple" : "Rs 50 per Kg.",
+    "Banana" : "Rs 120 per Kg.",
+    "Orange" : "Rs 150 per Kg.",
+    "Dragon Fruit" : "Rs 300 per Kg.",
+    "Watermelon" : "Rs 220 per Kg."
+}
+
+user_fruit = input("Enter fruit Name: ")
+
+# for i in fruits:
+#         if i.lower() == user_fruit.lower():
+#             print(f"{i} is",fruits[i])
+#             break
+# else:
+#     print('Not Available.')
+
+print(fruits.get(user_fruit.title(),"Not available"))
+
+# C7
+value = list(range(1, 11))
+print(value)
+
+value = list(range(2, 21, 2))
+print(value)
+
+value = list(range(10, 0, -1))
+print(value)
+
+value = list(range(5, 51, 5))
+print(value)
 
 
 
